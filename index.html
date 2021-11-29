@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    * {
+        margin: 1px;
+
+    }
+
+    #header {
+        text-align: center;
+        padding-top: 3%;
+        background-color: palegreen;
+        width: 100%;
+        height: 110px;
+        margin-bottom: 4px;
+
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+    }
+
+    #aside {
+
+        float: left;
+        width: 30%;
+        background-color: palevioletred;
+        height: 300px;
+
+
+    }
+
+    #flex-container {
+
+        float: right;
+        width: 69%;
+        background-color: orange;
+        height: 300px;
+
+
+    }
+
+    #flex-container img {
+        float: inherit;
+        margin-top: 6%;
+        margin-right: 8%;
+        margin-left: 4%;
+        width: 20%;
+        height: 50%;
+        transition: width 1s, height 1s, transform 3s, border-radius 1s, box-shadow 2s;
+
+    }
+
+    img:hover {
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 80px;
+        transform: rotate(360deg);
+       
+
+
+    }
+
+    #footer {
+
+        margin-top: 310px;
+        width: 100%;
+        background-color: tomato;
+        height: 110px;
+        position: relative;
+
+
+    }
+</style>
+
+<body>
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="aside">
+        <h1>Aside</h1>
+    </div>
+    <div id="flex-container">
+        <h1>Article</h1>
+        <img src="img/pic1.jpg">
+        <img src="img/pic2.jpg">
+        <img src="img/pic3.jpeg">
+
+
+
+    </div>
+
+    <div id="footer">
+        <h1>footer</h1>
+    </div>
+</body>
+
+</html>
